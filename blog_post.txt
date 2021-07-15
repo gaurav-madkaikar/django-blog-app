@@ -1,0 +1,15 @@
+Post
+---------------
+## Properties
+title
+author
+content
+images (optional)
+created_date
+published_date
+
+## Methods
+create
+edit
+delete
+publish
