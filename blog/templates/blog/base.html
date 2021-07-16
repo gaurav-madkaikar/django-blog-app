@@ -27,12 +27,14 @@
     <!-- Use double curly brackets to display variables -->
     <!-- {{ posts }} -->
     <header class="header">
-        <h1 class="heading-primary center-content">Blogger</h1>
+        <h1 class="heading-primary"> <a href="{% url 'post_list'%}"> Blogger </a> </h1>
+
+        <!-- SVG ICON for adding new posts -->
+        {% block add_posts %}
+        {% endblock %}
     </header>
 
-    <!-- SVG ICON for adding new posts -->
-    {% block add_posts %}
-    {% endblock %}
+    
     
     <!-- <article class="article">
         <time>Published: 14.07.2019, 12:14 AM</time>

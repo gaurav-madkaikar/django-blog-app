@@ -15,7 +15,7 @@ body{
 }
 
 .header{
-    height: 15%;
+    height: 10%;
     background-color: #f3bc09;
     padding: 2rem;
     position: relative;
@@ -25,12 +25,22 @@ h2 a {
     color: blue;
 }
 
-.heading-primary{
+.heading-primary
+{
+    float: left;
+}
+
+.heading-primary a,
+.heading-primary a:active{
     padding: 5px;
     color: white;
     font-family: 'Lato', sans-serif;
     font-family: 'RocknRoll One', sans-serif;
     font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.center_content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,6 +95,78 @@ h2 a {
     letter-spacing: 0.5px;
 }
 
+.svg__icon svg,
+.svg__icon svg:active{
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    color: white;
+}
+
+.form__title, 
+.form__text
+{
+    font-size: 2rem;
+}
+
+.form__title, 
+.form__text, 
+.post-form textarea,
+.post-form input{
+    display: block;
+}
+
+.btn{
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #f3bc09;
+    border: none;
+    cursor: pointer;
+
+    transition: all .3s;
+}
+
+.btn:active{
+    transform: translateY(5px);
+}
+
+.post-form{
+    /* margin: 0 auto; */
+    padding: 0 3rem;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 80%;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.post-form input {
+    height: 2rem;
+    font-size: 2rem;
+    padding: 5px 1rem;
+}
+
+.post-form textarea{
+    height: 20rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.center_text{
+    width: 100%;
+    text-align: center;
+}
+
+.form__heading{
+    font-family: 'Lobster', sans-serif;
+    font-size: 2.7rem;
+}
+
 /* Margins */
 .margin-small{
     margin-bottom: 1.5rem;
@@ -102,4 +184,22 @@ h2 a {
 footer{
     background-color: black;
     height: 20rem;
+}
+
+.black-color{
+    color: black;
+}
+
+.actions{
+    float: right;
+    background-color: #f3bc09;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.actions a svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
 }

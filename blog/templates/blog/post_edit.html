@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <div class="center_text margin-medium">
+        <h2 class="form__heading">Edit post</h2>
+    </div>
+        
+
+    <form method="POST" class="post-form">{% csrf_token %}  <!-- Token is important for security -->
+       <h2 class="form__title"> Title: </h2> <div class="margin-small"> {{ form.title }} </div> 
+       <h2 class="form__text"> Content: </h2> <div class="margin-small"> {{ form.text }} </div>  <!-- Display the form contents -->
+       <button type="submit" class="btn">Save Post</button>
+    </form>
+
+{% endblock %}

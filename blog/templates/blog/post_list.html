@@ -13,6 +13,12 @@
     {% for post in posts %}
         <article class="article margin-large">
             <time class="article__time margin-small">Published: {{post.published_date}}</time>
+            
+            <div class="actions">
+                <a href="{% url 'post_edit' pk=post.pk %}">
+                  {% include './icons/pencil-fill.svg' %}  
+                </a>
+            </div>
             <h2 class="article__heading margin-small"><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
             <p class="article__text">{{post.text|linebreaksbr}}</p>
         </article>
