@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger | Homepage</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../../static/css/style.css">
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lato:wght@300&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Use double curly brackets to display variables -->
+    <!-- {{ posts }} -->
+    <header class="header">
+        <h1 class="heading-primary center-content">Blogger</h1>
+    </header>
+
+    <!-- SVG ICON for adding new posts -->
+    {% block add_posts %}
+    {% endblock %}
+    
+    <!-- <article class="article">
+        <time>Published: 14.07.2019, 12:14 AM</time>
+        <h2><a href="#">My first post</a></h2>
+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </article>
+
+    <article class="article">
+        <time>Published: 05.03.2020, 21:42 PM</time>
+        <h2><a href="#">My second post</a></h2>
+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+    </article> -->
+    <section class="posts margin-medium">
+        {% block content %}
+        {% endblock %}
+    </section>
+
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+        
+</body>
+
+</html>
